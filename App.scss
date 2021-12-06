@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #db4c3f;;
+    border-bottom: solid 1px #ca2100;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    height: 44px;
+    width: 100%;
+
+    font-size: larger;
+
+    nav{
+        display: flex;
+        margin: auto;
+        height: 100%;
+        // align-items: center;
+        max-width: 922px;
+        justify-content: center;
+    }
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Roboto",sans-serif;
+    color: black;
+    background-color:#fafafa;
+}
+
+.content{
+    display: flex;
+    max-width: 922px;
+    margin: auto;
+    justify-content: center;
+}
+
+.sidebar{
+
+    user-select: none;
+    height: 100vh;
+    width: 266px;
+    padding-top: 70px;
+    background-color: #fafafa;
+    border-right: 1px solid #f1f1f1;
+
+    div{
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+
+        &.active {
+            background-color: white;
+        }
+
+        .icon{
+            margin-right: 10px;
+        }
+    }
+}
+.tasks{
+    padding: 60px 20px 0;
+
+    height: 100vh;
+    width: calc(922px-266px);
+
+    .add-btn-task{
+        cursor: pointer;
+    }
+    .plus{
+        color: red;
+        padding-right: 10px;
+    }
+    .add-task-text{
+
+        color: #545454;
+
+        font-size: 14px;
+    } 
+    
+}
+.add-tsk-dial{
+    margin-top: 10px;
+
+    input{
+        width: 150%;
+        border: 1px solid #ddd;
+        background-color: white;
+        border-radius: 3px;
+        height: 35px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .icon-container{
+        width: 20%;
+    }
+    .add-task-actions-container{
+        margin-top: 10px;
+        display: flex;
+
+        justify-content: space-between;
+
+        .add_tsk{
+            background-color: #db4c13;
+            margin-right: 10px;
+            font-weight: bold;
+            color: white;
+            &:disabled{
+                background-color: grey;
+            }
+            &:active{
+                transform:scale(0.9);
+            }
+        }
+        .cnc{
+            all:unset;
+            cursor: pointer;
+        }
+    }
+}
