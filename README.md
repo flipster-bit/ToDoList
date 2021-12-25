@@ -4,7 +4,7 @@
 Its an Application which helps you store your day to day tasks.
 
 ## Features
-Pick a date from callendar
+Pick a date from calendar
 
 Add new task
 
